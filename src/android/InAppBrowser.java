@@ -603,50 +603,50 @@ public class InAppBrowser extends CordovaPlugin {
 
 
                 // Bookmark button
-                Button bookmark = new Button(cordova.getActivity());
-                RelativeLayout.LayoutParams bookmarkLayoutParams = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.MATCH_PARENT);
-                bookmarkLayoutParams.addRule(RelativeLayout.RIGHT_OF, 3);
-                bookmark.setLayoutParams(bookmarkLayoutParams);
-                bookmark.setContentDescription("Bookmark Button");
-                bookmark.setId(4);
-                int bkmResId = activityRes.getIdentifier("ic_action_bookmark_item", "drawable", cordova.getActivity().getPackageName());
-                Drawable bkmIcon = activityRes.getDrawable(bkmResId);
-                if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN)
-                {
-                    bookmark.setBackgroundDrawable(bkmIcon);
-                }
-                else
-                {
-                    bookmark.setBackground(bkmIcon);
-                }
-                bookmark.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        goForward();
-                    }
-                });
+                // Button bookmark = new Button(cordova.getActivity());
+                // RelativeLayout.LayoutParams bookmarkLayoutParams = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.MATCH_PARENT);
+                // bookmarkLayoutParams.addRule(RelativeLayout.RIGHT_OF, 3);
+                // bookmark.setLayoutParams(bookmarkLayoutParams);
+                // bookmark.setContentDescription("Bookmark Button");
+                // bookmark.setId(4);
+                // int bkmResId = activityRes.getIdentifier("ic_action_bookmark_item", "drawable", cordova.getActivity().getPackageName());
+                // Drawable bkmIcon = activityRes.getDrawable(bkmResId);
+                // if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN)
+                // {
+                //     bookmark.setBackgroundDrawable(bkmIcon);
+                // }
+                // else
+                // {
+                //     bookmark.setBackground(bkmIcon);
+                // }
+                // bookmark.setOnClickListener(new View.OnClickListener() {
+                //     public void onClick(View v) {
+                //         goForward();
+                //     }
+                // });
 
                 // Share button
-                Button share = new Button(cordova.getActivity());
-                RelativeLayout.LayoutParams shareLayoutParams = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.MATCH_PARENT);
-                shareLayoutParams.addRule(RelativeLayout.RIGHT_OF, 4);
-                share.setLayoutParams(shareLayoutParams);
-                share.setContentDescription("Share Button");
-                share.setId(5);
-                int sarResId = activityRes.getIdentifier("ic_action_share_item", "drawable", cordova.getActivity().getPackageName());
-                Drawable sarIcon = activityRes.getDrawable(sarResId);
-                if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN)
-                {
-                    share.setBackgroundDrawable(sarIcon);
-                }
-                else
-                {
-                    share.setBackground(sarIcon);
-                }
-                share.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        goForward();
-                    }
-                });
+                // Button share = new Button(cordova.getActivity());
+                // RelativeLayout.LayoutParams shareLayoutParams = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.MATCH_PARENT);
+                // shareLayoutParams.addRule(RelativeLayout.RIGHT_OF, 4);
+                // share.setLayoutParams(shareLayoutParams);
+                // share.setContentDescription("Share Button");
+                // share.setId(5);
+                // int sarResId = activityRes.getIdentifier("ic_action_share_item", "drawable", cordova.getActivity().getPackageName());
+                // Drawable sarIcon = activityRes.getDrawable(sarResId);
+                // if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN)
+                // {
+                //     share.setBackgroundDrawable(sarIcon);
+                // }
+                // else
+                // {
+                //     share.setBackground(sarIcon);
+                // }
+                // share.setOnClickListener(new View.OnClickListener() {
+                //     public void onClick(View v) {
+                //         goForward();
+                //     }
+                // });
 
                 // Edit Text Box
                 // edittext = new EditText(cordova.getActivity());
@@ -677,7 +677,8 @@ public class InAppBrowser extends CordovaPlugin {
                 closeLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
                 close.setLayoutParams(closeLayoutParams);
                 forward.setContentDescription("Close Button");
-                close.setId(6);
+                // close.setId(6);
+                close.setId(4);
                 int closeResId = activityRes.getIdentifier("ic_action_remove", "drawable", cordova.getActivity().getPackageName());
                 Drawable closeIcon = activityRes.getDrawable(closeResId);
                 if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN)
